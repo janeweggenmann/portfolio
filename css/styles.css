@@ -272,6 +272,11 @@ input[type="submit"] {
    height: 100px;
 }
 
+#contact-message, #contact-email, #contact-phone {
+   border: solid var(--light-grey) 1px;
+   border-radius: 5px;
+}
+
 /* Work page */
 
 .work-page {
