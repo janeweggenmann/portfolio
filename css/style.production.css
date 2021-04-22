@@ -384,6 +384,21 @@ input[type="submit"] {
    height: 100px;
 }
 
+#contact-message {
+   border: solid #b7b7b7 1px;
+   border-radius: 5px;
+}
+
+#contact-email {
+   border: solid #b7b7b7 1px;
+   border-radius: 5px;
+}
+
+#contact-phone {
+   border: solid #b7b7b7 1px;
+   border-radius: 5px;
+}
+
 /* Work page */
 
 .work-page {
