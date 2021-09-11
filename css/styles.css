@@ -337,7 +337,7 @@ input[type="submit"] {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
 }
 
@@ -348,6 +348,10 @@ input[type="submit"] {
   padding: 20px;
   text-align: left;
   border: solid black 1px;
+}
+
+.second-work-link {
+  padding-left: 10px;
 }
 
 /* Responsive page settings */
