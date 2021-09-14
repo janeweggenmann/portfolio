@@ -84,8 +84,6 @@ a:focus {
 
 button:hover,
 button:focus,
-.home__cv-button:hover,
-.home__cv-button:focus,
 .button__secondary:hover,
 .button__secondary:focus {
   cursor: pointer;
@@ -93,7 +91,6 @@ button:focus,
 }
 
 button,
-.home__cv-button,
 .button__secondary,
 input[type="submit"] {
   border: none;
@@ -108,10 +105,30 @@ input[type="submit"] {
   transition: 0.2s opacity;
 }
 
-.error-message {
-  color: red;
-  font-size: 0.8em;
+.home__cv-button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to right, #778865, #6fa2af, #35597a);
+  background-size: 300% 100%;
+  cursor: pointer;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
+
+.home__cv-button:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
 
 /* Universal page settings */
 
@@ -248,11 +265,13 @@ input[type="submit"] {
 
 .about__cloud {
   height: 100px;
+  width: 100%;
+  display: inline-block;
+  position: relative;
 }
 
 .cloud-img {
   position: absolute;
-  width: 70%;
   z-index: -1;
 }
 
@@ -369,7 +388,7 @@ input[type="submit"] {
   }
   .home-page{
     padding-top: 200px;
-    height: 1050px;
+    min-height: 1050px;
   }
   .profile__portrait {
     float: none;
@@ -379,34 +398,48 @@ input[type="submit"] {
   .profile {
     text-align: center;
     flex-direction: column;
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
   .projects-grid {
     grid-template-columns: 1fr;
   }
   .experience-list {
-    padding: 0px 20px;
+    padding: 0px 10px;
     margin: 0 auto;
     justify-content: space-between;
+    width: 50%;
   }
-  .about__sf-image {
+  .about__cloud {
+    height: 20px;
+  }
+  .about__bridge {
     width: 100%;
     padding-top: 0;
   }
-  .cloud-img {
-    width: 90%;
+  .about-page {
+    height: 720px;
+  }
+  .work-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .second-work-link {
+    padding-left: 0px;
   }
   .contact-wrapper {
     width: 90%;
+  }
+  .page-footer {
+    height: 100px;
+  }
+  .footer-logo {
+    width: 80px;
   }
 }
 
 @media (min-width: 551px) and (max-width: 991.98px) {
   .projects-grid {
     grid-template-columns: 1fr;
-  }
-  .cloud-img {
-    width: 90%;
   }
 }
 
@@ -426,6 +459,7 @@ input[type="submit"] {
     align-items: center;
     max-width: 100%;
     margin: 0 auto;
+    padding: 20px 20px 0px;
   }
   .page-header__item{
     flex: none;
@@ -434,7 +468,7 @@ input[type="submit"] {
     padding: 0;
   }
   .header-logo {
-    width: 400px;
+    width: 450px;
   }
   h1 {
     font-size: 28px;
