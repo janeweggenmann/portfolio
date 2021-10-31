@@ -197,7 +197,7 @@ input[type="submit"] {
 
 .home-page{
   padding-top: 170px;
-  min-height: 900px;
+  min-height: 920px;
   background-color: #f3f2f1;
 }
 
@@ -372,19 +372,35 @@ input[type="submit"] {
 
 .contact-text {
   text-align: right;
-  padding-bottom: 20px;
 }
 
 .contact-location {
   font-style: italic;
+  text-align: right;
 }
 
+.contact-icon {
+  max-width: 50px;
+  padding: 10px;
+  align-self: center;
+}
+
+.contact-icons {
+  margin-left: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
 
 /* Responsive page settings */
 
 @media (max-width: 550.98px) {
-  p, li {
+  p {
     font-size: 11.5pt;
+  }
+  li {
+    font-size: 10pt;
   }
   .home-page{
     padding-top: 200px;
@@ -410,7 +426,7 @@ input[type="submit"] {
     width: 50%;
   }
   .about__cloud {
-    height: 20px;
+    visibility: hidden;
   }
   .about__bridge {
     width: 100%;
